@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>object</title>
+</head>
+<body>
+		<p id="1"></p>
+		<p id="2"></p>
+		
+		<script>
+			a={
+		 first_name:"Bilal",
+		 last_name:"Saeed",
+		 emp_id:21516,
+		 full_name:function(){
+		return this.first_name+" "+this.last_name;
+						}
+				}
+				document.getElementById('1').innerHTML=a.full_name();
+			var obj={firstName:"Muhammad",lastName:"Bilal"}
+			document.getElementById('2').innerHTML=obj.firstName+" "+obj.lastName;
+		</script>
+</body>
+</html>

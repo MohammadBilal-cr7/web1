@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>string methods</title>
+</head>
+<body>
+<p id="1"></p>
+<p id="2"></p>
+<p id="3"></p>
+<p id="4"></p>
+<p id="5"></p>
+<button onclick="abc()">try</button>
+<p id="6">my name is bilal and bilal</p>
+<button onclick="abc1()">try</button>
+<p id="7">my name is bilal and bilal</p>
+<button onclick="abc2()">position</button>
+<p id="8">my name is bilal</p>
+<p id="9"></p>
+
+
+
+<script>
+
+/*length string*/
+var a="Muhammad Bilal";
+document.getElementById('1').innerHTML=a.length
+
+/*indexOf string*/
+var txt="my name is bilal";
+var res=txt.indexOf("name");	
+document.getElementById('2').innerHTML=res;
+
+/*lastIndexOf string*/
+var txt1="this is paragraph and paragraph"
+document.getElementById('3').innerHTML=txt1.lastIndexOf("paragraph")
+
+/*indexof using 2nd parameter*/
+var txt2="my name is bilal";
+var res1=txt2.indexOf("name",5);
+document.getElementById('4').innerHTML=res1;
+
+/*slice a part of string*/
+var txt3="my name is bilal";
+var res3=txt3.slice(3,7);
+document.getElementById('5').innerHTML=res3;
+
+/*replace*/
+
+var txt4="my name is bilal";
+function abc(){
+var txt=document.getElementById('6').innerHTML;
+var res=txt.replace("bilal","faizan");
+document.getElementById('6').innerHTML=res;
+}
+
+/*replace all*/
+function abc1(){
+var txt=document.getElementById('7').innerHTML
+res=txt.replace(/bilal/g,"faizan")
+document.getElementById('7').innerHTML=res
+}
+
+/*character at position provide*/
+function abc2(){
+var a=document.getElementById('8').innerHTML
+var b=a.charAt(3);
+document.getElementById('9').innerHTML=b
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>for loop</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+var arr=["bilal","faizan","arbaz","hussain","ashir"];
+var arr_length=arr.length;
+var text="<ul>";
+for(i=0;i<arr_length;i++)
+{
+	text+="<li>"+arr[i]+"</li>"
+}
+text+="</ul>";
+document.getElementById('demo').innerHTML=text;
+</script>
+</body>
+</html>

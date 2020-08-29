@@ -1,0 +1,15 @@
+<html>
+<head><title>Events</title></head>
+<body>
+<p id="1"></p>
+<p id="2"></p>
+<button onclick="document.getElementById('1').innerHTML=Date()">click</button><br>
+<button onclick="this.innerHTML=Date()">click</button><br>
+<button onclick="displayDate()">click</button>
+<script>
+function displayDate(){
+document.getElementById('2').innerHTML=Date()
+}
+</script>
+</body>
+</html>

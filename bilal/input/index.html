@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="currencyChange()">
+    <form>
+`       <select id="currency"  onchange="currencyChange()">
+
+            <option value="pkr">pkr</option>
+            <option value="usd">usd</option>
+            <option value="cad">cad</option>
+        </select><br>
+    <input id="1" type="text" maxlength="3"  onkeyup="getValueCow()" placeholder="cow"  autocomplete="off">
+    <input id="total1" type="number" disabled><br>
+    <input id="2" type="text" min="1" maxlength="3" onkeyup="getValueGoat()" placeholder="goat" autocomplete="off">
+    <input id="total2" type="number"  disabled><br>
+    <input id="3" type="text" min="1" maxlength="3" onkeyup="getValueCowShare()" placeholder="cowshare" autocomplete="off">
+    <input id="total3" type="number" disabled><br>
+        <span>Total Amount:</span><span id="total" style="margin-left:10px;margin-top:5px" ></span>
+
+    </form> 
+    <script src="app.js"></script>
+</body>
+</html>
